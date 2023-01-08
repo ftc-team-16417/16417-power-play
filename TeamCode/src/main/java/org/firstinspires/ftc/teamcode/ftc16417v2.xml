@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Robot type="FirstInspires-FTC">
+    <LynxUsbDevice name="Control Hub Portal" serialNumber="(embedded)" parentModuleAddress="173">
+        <LynxModule name="Expansion Hub 3" port="3">
+            <goBILDA5202SeriesMotor name="hSlider" port="0" />
+            <goBILDA5202SeriesMotor name="vSlider" port="1" />
+            <Servo name="vcTilt" port="0" />
+            <Servo name="vcPan" port="1" />
+            <Servo name="vcLeft" port="2" />
+            <Servo name="vcRight" port="3" />
+            <REV_VL53L0X_RANGE_SENSOR name="vLeftDis" port="0" bus="2" />
+            <REV_VL53L0X_RANGE_SENSOR name="vRightDis" port="0" bus="0" />
+            <REV_VL53L0X_RANGE_SENSOR name="vMiddleDis" port="0" bus="1" />
+            <RevTouchSensor name="vTouch" port="1" />
+        </LynxModule>
+        <LynxModule name="Control Hub" port="173">
+            <goBILDA5202SeriesMotor name="lf" port="0" />
+            <goBILDA5202SeriesMotor name="rf" port="1" />
+            <goBILDA5202SeriesMotor name="lr" port="2" />
+            <goBILDA5202SeriesMotor name="rr" port="3" />
+            <Servo name="hcTiltLeft" port="3" />
+            <Servo name="hcTiltRight" port="2" />
+            <Servo name="hcPan" port="4" />
+            <Servo name="hcLeft" port="1" />
+            <Servo name="hcRight" port="0" />
+            <LynxEmbeddedIMU name="imu" port="0" bus="0" />
+            <!-- ControlHubImuBHI260AP name="imu" port="0" bus="0" / -->
+            <!--LynxColorSensor name="colorSensor1" port="0" bus="1" /-->
+            <REV_VL53L0X_RANGE_SENSOR name="hLeftDis" port="0" bus="0" />
+            <REV_VL53L0X_RANGE_SENSOR name="hRightDis" port="0" bus="1" />
+            <RevTouchSensor name="hTouch" port="1" />
+        </LynxModule>
+    </LynxUsbDevice>
+    <!-- scan to found the right camera serial number, then add it here -->
+    <!--Webcam name="Webcam 1" serialNumber="48AAAF60" /-->
+</Robot>
